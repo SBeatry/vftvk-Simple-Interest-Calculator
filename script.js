@@ -1,43 +1,11 @@
-
 var principal = document.getElementById("principal");
 var rate = document.getElementById("rate");
-var year = document.getElementById("year");
-
-function compute()
-//Returns interest
-{
-var interest = principal * year * rate / 100;
-return interest;
-}
-function thisyear()
-//Adds the number of years to the actual year
-{
-    var d = new Date();
+var years = document.getElementById("years");
+var interest = principal * years * rate / 100;
+var d = new Date ();
 var n = d.getFullYear();
-var year = document.getElementById("year");
-
-    var years = n + year;
-    return year;
-}
-function slider()
-//Displays slider value
+var number = n + years;
+function slider1 ()
 {
-var slider = document.getElementById("rate");
-var demo = document.getElementById("percentage");
-demo.innerHTML = slider.value;
-
-slider.onchange = function() {
-  demo.innerHTML = this.value;
+ document.getElementById("percentage").innerHTML=this.value;
 }
-}
-var result = document.getElementById("result");
-
-function interest()
-//Displays the details
-{
-"If you deposit"+principal break
-"at an interest rate of "+rate break
-"you will recieve an amount of "+result break
-"in the year "+year
-}
-
