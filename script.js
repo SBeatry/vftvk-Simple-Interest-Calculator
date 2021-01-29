@@ -1,24 +1,23 @@
-  var principal = p;
-    var rate = r;
-    var years = y;
+
+var principal = document.getElementById("principal");
+var rate = document.getElementById("rate");
+var year = document.getElementById("years");
+
 function compute()
 //Returns interest
 {
-p = document.getElementById("principal").value;
-r = document.getElementById("rate").value;
-y = document.getElementById("years").value;
-
-    var interest = "principal"*"years"*"rate"/100;
-    return interest;
-
+var interest = principal * year * rate / 100;
+return interest;
 }
 function thisyear()
 //Adds the number of years to the actual year
 {
     var d = new Date();
 var n = d.getFullYear();
-    var year = n + y;
-    return year;
+var year = document.getElementById("years");
+
+    var years = n + year;
+    return years;
 }
 function slider()
 //Displays slider value
@@ -27,18 +26,18 @@ var slider = document.getElementById("rate");
 var demo = document.getElementById("percentage");
 demo.innerHTML = slider.value;
 
-slider.oninput = function() {
+slider.onchange = function() {
   demo.innerHTML = this.value;
 }
 }
-var resulr = document.getElementById("result");
+var result = document.getElementById("result");
 
 function interest()
 //Displays the details
 {
-SpeechRecognitionResult.innerHTML = 
 "If you deposit"+principal break
 "at an interest rate of "+rate break
 "you will recieve an amount of "+result break
 "in the year "+year
 }
+
