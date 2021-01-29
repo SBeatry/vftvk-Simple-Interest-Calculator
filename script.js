@@ -1,7 +1,7 @@
 
 var principal = document.getElementById("principal");
 var rate = document.getElementById("rate");
-var year = document.getElementById("years");
+var year = document.getElementById("year");
 
 function compute()
 //Returns interest
@@ -14,10 +14,10 @@ function thisyear()
 {
     var d = new Date();
 var n = d.getFullYear();
-var year = document.getElementById("years");
+var year = document.getElementById("year");
 
     var years = n + year;
-    return years;
+    return year;
 }
 function slider()
 //Displays slider value
