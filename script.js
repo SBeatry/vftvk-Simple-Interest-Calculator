@@ -7,7 +7,8 @@ var n = d.getFullYear();
 var number = n + years;
 function slider1 ()
 {
-document.getElementById("percentage").innerHTML=this.value;
+var x = document.getElementById("rate").value; 
+document.getElementById("percentage").innerHTML=x;
 }
 
 
