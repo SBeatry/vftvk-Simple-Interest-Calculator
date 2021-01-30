@@ -15,10 +15,10 @@ var d = new Date ();
 var n = d.getFullYear();
 var number = n + years;
 //Shows results
-document.getElementById("result").innerHTML='If you deposit ' + principal.value + ',' /
-'at an interest rate of ' + rate.value + '.' /
-'You will receive an amount of ' + interest.value + ',' /
-'in the year ' + number.value;
+document.getElementById("result").innerHTML="<br><br>" + "If you deposit " + principal.value + "," + "<br>" +
+"at an interest rate of " + rate.value + "." + "<br>" +
+"You will receive an amount of " + interest.value + "," + "<br>" +
+"in the year " + number.value;
 }
 
 function checkdata(){
