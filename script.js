@@ -7,18 +7,18 @@ document.getElementById("percentage").innerHTML=x;
 
 function compute()
 {
-var principal = document.getElementById("principal");
-var rate = document.getElementById("rate");
-var years = document.getElementById("years");
-var interest = principal * years * rate / 100;
+var principal = document.getElementById("principal").value;
+var rate = document.getElementById("rate").value;
+var years = document.getElementById("years").value;
+var interest = principal*years*rate/100;
 var d = new Date ();
 var n = d.getFullYear();
-var number = n + years;
+var sum = +years + +n;
 //Shows results
-document.getElementById("result").innerHTML="<br><br>" + "If you deposit " + "<mark>" + principal.value + "</mark>" + "," + "<br>" +
-"at an interest rate of " + "<mark>" + rate.value + "</mark>" + "." + "<br>" +
-"You will receive an amount of " + "<mark>" + interest.value + "</mark>" + "," + "<br>" +
-"in the year " + "<mark>" + number.value + "</mark>";
+document.getElementById("result").innerHTML="<br><br>" + "If you deposit " + "<mark>" + principal + "</mark>" + "," + "<br>" +
+"at an interest rate of " + "<mark>" + rate + "</mark>" + "." + "<br>" +
+"You will receive an amount of " + "<mark>" + interest + "</mark>" + "," + "<br>" +
+"in the year " + "<mark>" + sum + "</mark>";
 }
 
 function checkdata(){
