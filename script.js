@@ -24,12 +24,14 @@ document.getElementById("result").innerHTML="<br><br>" + "If you deposit " + "<m
 function checkdata(){
 
       //Check if principal is positive 
-      if(principal.value < 1){
+      if(principal.value <= 0){
             alert("Enter a positive number");
             principal.focus();
             return false;
       }
      
      //If it is positive return true.
-      return true;
+     else{
+    compute();
+     }
 }
